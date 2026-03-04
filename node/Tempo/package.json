@@ -1,0 +1,18 @@
+{
+  "name": "trace-demo-node-otel",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Minimal Node.js + Express + OpenTelemetry tracing demo",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "check": "node --check app.js && node --check tracing.js"
+  },
+  "dependencies": {
+    "@opentelemetry/api": "^1.9.0",
+    "@opentelemetry/auto-instrumentations-node": "^0.53.0",
+    "@opentelemetry/exporter-trace-otlp-proto": "^0.53.0",
+    "@opentelemetry/sdk-node": "^0.53.0",
+    "express": "^4.19.2"
+  }
+}
